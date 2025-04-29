@@ -13,6 +13,7 @@ async function bootstrap() {
       'https://department-management-frontend-rouge.vercel.app'
     ],
     credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: 'Content-Type, Authorization',
   })  
 
