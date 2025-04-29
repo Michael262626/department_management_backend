@@ -8,10 +8,13 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.enableCors({
-    origin: 'http://localhost:3001', 
-    credentials: true,   
+    origin: [
+      'http://localhost:3001',
+      'https://department-management-frontend-rouge.vercel.app'
+    ],
+    credentials: true,
     allowedHeaders: 'Content-Type, Authorization',
-  });
+  })  
 
   const config = new DocumentBuilder()
     .setTitle('Department API')
