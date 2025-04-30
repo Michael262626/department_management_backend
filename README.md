@@ -1,7 +1,27 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+# Department Management App
+
+A full-stack web application for managing departments, built with **React (Frontend)** and **NestJS (Backend)**.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, TypeScript, Tailwind CSS
+- **Backend:** NestJS, TypeScript, PostgreSQL
+- **State Management:** Redux Toolkit
+- **Deployment:** Vercel (Frontend), Render (Backend)
+
+---
+
+## 📁 Project Structure
+
+```bash
+.
+├── department_management_frontend  # React frontend
+├── department_management_backend   # NestJS backend
 
 ## Project setup
 
@@ -40,3 +60,8 @@ $ npm run test:cov
 $ npm install -g @nestjs/mau
 $ mau deploy
  
+
+PORT=3000
+DATABASE_URL=your_postgres_url
+JWT_SECRET=your_jwt_secret
+FRONTEND_URL=http://localhost:3001
